@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portrait Photography – Zaid Photography</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-color: #000;
+        --primary-color: #fff;
+        --accent-color: #d4af37;
+        --font-sans: "Montserrat", sans-serif;
+        --font-arabic: "Cairo", sans-serif;
+        --transition: 0.3s ease;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: var(--bg-color);
+        color: var(--primary-color);
+        font-family: var(--font-sans);
+        line-height: 1.7;
+      }
+      header {
+        padding: 20px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.8);
+        border-bottom: 2px solid var(--accent-color);
+      }
+      header h1 {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+      }
+      .intro {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      .gallery {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      .gallery img {
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid var(--accent-color);
+        transition: transform var(--transition), filter var(--transition);
+        filter: grayscale(100%);
+      }
+      .gallery img:hover {
+        transform: scale(1.05);
+        filter: grayscale(0%);
+      }
+
+      .back-link {
+        display: block;
+        text-align: center;
+        margin: 40px auto;
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: color var(--transition);
+      }
+      .back-link:hover {
+        color: #b5982e;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Portrait Photography</h1>
+    </header>
+    <section class="intro">
+      <p>
+        My portrait sessions are about one thing: capturing you at your best.
+        Whether you’re building a personal brand, need a headshot, or want
+        something meaningful to keep and share — I’ll guide you through the
+        whole process with light, angle, and confidence.
+      </p>
+    </section>
+    <section class="gallery">
+      <img
+        src="https://img.freepik.com/free-photo/portrait-young-woman-with-natural-make-up_23-2149084942.jpg?semt=ais_hybrid&w=740"
+        alt="Portrait 1"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1614090965443-3df21c6906ec?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Portrait 2"
+      />
+      <img
+        src="https://source.unsplash.com/800x600/?portrait,3"
+        alt="Portrait 3"
+      />
+      <img
+        src="https://source.unsplash.com/800x600/?portrait,4"
+        alt="Portrait 4"
+      />
+      <img
+        src="https://source.unsplash.com/800x600/?portrait,5"
+        alt="Portrait 5"
+      />
+      <img
+        src="https://source.unsplash.com/800x600/?portrait,6"
+        alt="Portrait 6"
+      />
+    </section>
+    <a href="index.html" class="back-link">&#8592; Back to Home</a>
+  </body>
+</html>
